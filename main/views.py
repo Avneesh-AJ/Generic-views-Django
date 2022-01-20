@@ -3,6 +3,7 @@ from dataclasses import field
 from pydoc import ModuleScanner
 from re import template
 from sre_constants import SUCCESS
+from typing import List
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views import View
@@ -21,13 +22,10 @@ from django.views.generic import (
     #return render(request,'index.html')
 
 
-class Index(View):
+class Index(ListView):
+    model=models.College
     template_name='index.html'
-    def get(self,request):
-        return HttpResponse("GET method")
-
-    def post(self,request):
-        return HttpResponse("POST method")
+    
 
 class CollegeDetail(DetailView):
     model=models.College
