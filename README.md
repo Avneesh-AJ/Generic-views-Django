@@ -8,3 +8,13 @@ there are different types of views in class based views <br>
 --> CreateView <br>
 --> UpdateView <br>
 --> DeleteView <br>
+
+How to run this project in your localhost <br>
+1. Download the Code
+2. Initialize the virtualenv venv as per windows/linux for windows it is - "venv\Scripts\activate"
+3. Download the requirements mentioned in the requirements.txt files
+4. make migrations using commands python manage.py makemigrations and python manage.py migrate
+5. Run the command python manage.py runserver and go to localhost on your browser
+6. Create some colleges create some students and then follow other links
+
+Happy Learning Django !
